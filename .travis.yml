@@ -1,12 +1,77 @@
+branches:
+
+  only:
+
+    - master
+
 language: android
+
+jdk:
+
+    - oraclejdk8
+
 android:
-  components:
-    - build-tools-18.1.0
+
+   components:
+
+      - android-11
+      - android-12
+      - android-13
+      - android-14
+      - sysimg-11
+      - sysimg-12
+      - sysimg-13
+      - sysimg-14
+      #- build-tools-20.0.0
+
+   licenses:
+      - android-sdk-license-5be876d5
+
+env:
+
+  matrix:
+
+    - ANDROID_SDKS=android-10,build-tools-19.1.0                      ANDROID_TARGET=android-10  ANDROID_ABI=armeabi
+    #- ANDROID_SDKS=android-11,sysimg-11,build-tools-19.1.0            ANDROID_TARGET=android-11  ANDROID_ABI=armeabi
+    #- ANDROID_SDKS=android-12,sysimg-12,build-tools-19.1.0            ANDROID_TARGET=android-12  ANDROID_ABI=armeabi
+    #- ANDROID_SDKS=android-13,sysimg-13,build-tools-19.1.0            ANDROID_TARGET=android-13  ANDROID_ABI=armeabi
+
+    #- ANDROID_SDKS=android-14,sysimg-14,build-tools-19.1.0            ANDROID_TARGET=android-14  ANDROID_ABI=armeabi
+    #- ANDROID_SDKS=android-15,build-tools-19.1.0                      ANDROID_TARGET=android-15  ANDROID_ABI=armeabi-v7a
+    #- ANDROID_SDKS=android-16,build-tools-19.1.0                      ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
+    #- ANDROID_SDKS=android-17,build-tools-19.1.0                      ANDROID_TARGET=android-17  ANDROID_ABI=armeabi-v7a
+    #- ANDROID_SDKS=android-18,build-tools-19.1.0                      ANDROID_TARGET=android-18  ANDROID_ABI=armeabi-v7a
+    #- ANDROID_SDKS=android-19,build-tools-19.1.0                      ANDROID_TARGET=android-19  ANDROID_ABI=armeabi-v7a
+
+before_install:
+
+  - android list sdk --no-ui --all --extended | grep -E '^id:' | awk -F '"' '{$1=""; print $2}'
+  - android list targets
+
+  # bug with language lint-side; web validation though works just fine (http://lint.travis-ci.org/)
+  #- gem install travis-lint
+  #- travis-lint
+
+  # - echo no | android create avd --force -n test -t android-10 --abi armeabi
+  - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
+  - emulator -avd test -no-skin -no-audio -no-window &
+
+install:
+
+after_install:
 
 before_script:
-  # Create and start emulator
-  - echo no | android create avd --force -n test -t android-16 --abi armeabi-v7a
-  - emulator -avd test -no-skin -no-audio -no-window &
-  - ./wait_for_emulator
 
-script: mvn install -Pintegration-tests -Dandroid.device=test
+  - adb wait-for-device
+  - adb devices -l
+
+script: mvn -e clean install -Pintegration-tests -Dandroid.device=test -Dandroid.extractDuplicates=true -X #-DignoreTestFailure=true
+
+after_script:
+
+  - adb logcat &
+
+after_success:
+
+after_failure:
+
