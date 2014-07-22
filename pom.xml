@@ -4,16 +4,16 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.embarkmobile.androidexample</groupId>
-    <artifactId>androidexample</artifactId>
+    <groupId>net.kibotu.android.error.tracking</groupId>
+    <artifactId>error-tracking</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
 
     <modules>
-        <module>androidexample-lib</module>
-        <module>androidexample-app</module>
-        <module>androidexample-tests</module>
+        <module>error-tracking-lib</module>
+        <module>error-tracking-app</module>
+        <module>error-tracking-tests</module>
     </modules>
 
 
@@ -22,14 +22,14 @@
             <dependency>
                 <groupId>com.google.android</groupId>
                 <artifactId>android</artifactId>
-                <version>4.1.1.4</version>
+                <version>2.3.3</version>
                 <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>com.google.android</groupId>
                 <artifactId>android-test</artifactId>
-                <version>4.1.1.4</version>
+                <version>2.3.3</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -43,15 +43,19 @@
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>3.8.2</version>
+                    <version>3.9.0-rc.2</version>
+                    <extensions>true</extensions>
                     <configuration>
                         <sdk>
-                            <platform>16</platform>
+                            <platform>10</platform>
                         </sdk>
+                        <extractDuplicates>true</extractDuplicates>
+                        <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                        <deleteConflictingFiles>true</deleteConflictingFiles>
+                        <failOnDuplicatePackages>false</failOnDuplicatePackages>
                     </configuration>
-
-                    <extensions>true</extensions>
                 </plugin>
+
                 <plugin>
                     <artifactId>maven-source-plugin</artifactId>
                     <version>2.2</version>
@@ -73,14 +77,18 @@
         </pluginManagement>
 
         <plugins>
+
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.1</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
@@ -128,5 +136,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 </project>
