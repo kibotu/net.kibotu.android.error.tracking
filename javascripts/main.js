@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    Parse.initialize("nl23nZNhm93KdkOZJJGTu8C3wJktzCHVc4KOqoBN", "6a2UZ6pXlE5K81e9Zh6CcrYyPy6QP8A8b2f8XSbL");
+
     String.prototype.escape = function () {
         var tagsToReplace = {
             '&': '&amp;',
@@ -133,8 +135,6 @@ $(document).ready(function () {
             parseLoadThrowables(createTimespan($(this).attr('href')));
         });
     };
-
-    Parse.initialize("nl23nZNhm93KdkOZJJGTu8C3wJktzCHVc4KOqoBN", "6a2UZ6pXlE5K81e9Zh6CcrYyPy6QP8A8b2f8XSbL");
 
     var parseLoadThrowables = function (timespan) {
 
