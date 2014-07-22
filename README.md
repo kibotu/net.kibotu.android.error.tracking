@@ -5,17 +5,23 @@ Android Error Tracking for gh-pages
 
 ### Introduction
 
-Library and app for showing tons of device information for your android device.
+Library to list errors of your live app on your github.io page.
 
 ### How to use
 
 1. Add the lib to your project. Whether by copy & paste of the /jar/error-tracking-lib.jar or by including it into your maven pom.xml.
-2. Add Parse.com Android lib to your project. [Latest Android SDK Version](https://parse.com/downloads/android/Parse/latest)
+2. Add Parse.com Android lib to your project. [Latest Parse.com Android SDK Version](https://parse.com/downloads/android/Parse/latest)
 3. Init the error tracking lib:
 ```
-ErrorTracking.startSession(this, applicationId, clientKey);
+ErrorTracking.startSession(this, applicationId, clientKey); // Note: you get the ids by creating a parse.com application.
 ```
-4. Add the htm code to your gh-page.
+4. Add the [demo html code to your gh-page](https://github.com/kibotu/net.kibotu.android.error.tracking/tree/gh-pages).
+
+5. Init parse in the [main.js:3](https://github.com/kibotu/net.kibotu.android.error.tracking/blob/gh-pages/javascripts/main.js)
+
+## Tests
+
+A working example can be found in the error-tracking-app folder.
 
 ### Ready to use lib in /jar/error-tracking-lib.jar
 
@@ -44,13 +50,9 @@ ErrorTracking.startSession(this, applicationId, clientKey);
 
 ### Features
 
-Sends uncaught exceptions to parse.com and lists them on your gh-page. 
+Sends uncaught exceptions of your live app to parse.com and lists them on your gh-page. 
 
 ### Changelog
-
-### Contact
-
-* [Jan Rabe](mailto:jan.rabe@wooga.com)
 
 ### TODO
 
@@ -61,6 +63,8 @@ Sends uncaught exceptions to parse.com and lists them on your gh-page.
 ## Contact
 
 **Contributers:**
+
+* [Jan Rabe](mailto:jan.rabe@wooga.com)
 
 ## Dependancies 
 

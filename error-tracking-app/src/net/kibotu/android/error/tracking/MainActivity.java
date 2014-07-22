@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
         ErrorTracking.addMetaData(metaData);
 
 //        testLowMemory();
+//        stub1();
     }
 
     @Override
@@ -33,7 +34,28 @@ public class MainActivity extends Activity {
         ErrorTracking.endSession();
     }
 
+    // region crashes
+
+    private void stub1(){
+        testNullPointer();
+    }
+
+    private void stub2() {
+        testNullPointer();
+    }
+
+    private void stub3() {
+        testNullPointer();
+    }
+
+    private void testNullPointer() {
+        String s = null;
+        s.toString();
+    }
+
     private void testLowMemory() {
         long[] l = new long[Integer.MAX_VALUE];
     }
+
+    // endregion
 }

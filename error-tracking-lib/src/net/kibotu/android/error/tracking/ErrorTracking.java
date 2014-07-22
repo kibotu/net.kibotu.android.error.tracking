@@ -21,7 +21,6 @@ public class ErrorTracking {
                         new Class<?>[]{Context.class, String.class, String.class},
                         new Object[]{context, parseAppKey, parseClientKey}));
 
-
         Logger.v("Parse.initialize( " + parseAppKey + ", " + parseClientKey + " )");
 
         UncaughtExceptionHandlerDecorator.setHandler(new Thread.UncaughtExceptionHandler() {
