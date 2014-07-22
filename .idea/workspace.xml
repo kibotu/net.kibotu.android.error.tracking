@@ -13,41 +13,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="584fef0c-59c1-4ba5-90f3-d213c44a8c95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_android_support_support_v4_18_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_android_test_2_3_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_dexmaker_dexmaker_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_dexmaker_dexmaker_mockito_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_android_robotium_robotium_solo_3_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error-tracking-app/error-tracking-app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error-tracking-lib/error-tracking-lib.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error-tracking-tests/error-tracking-tests.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error-tracking.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-app\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-app\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-app\src\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-lib\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-lib\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-lib\res\layout\example.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-lib\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-lib\src\com\embarkmobile\androidexample\Counter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-lib\src\com\embarkmobile\androidexample\ExampleActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-tests\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-tests\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-tests\src\com\embarkmobile\androidexample\tests\CounterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-tests\src\com\embarkmobile\androidexample\tests\ExampleTest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\androidexample-tests\src\com\embarkmobile\androidexample\tests\TestActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\wait_for_emulator" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\ant.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\build.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\deviceinfo-tests.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\proguard-project.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\src\net\kibotu\android\deviceinfo\ABTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\src\net\kibotu\android\deviceinfo\ActivityInstrumentationImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\src\net\kibotu\android\deviceinfo\BlaTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\src\net\kibotu\android\deviceinfo\UnitTestActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\target\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\target\generated-sources\r\net\kibotu\android\deviceinfo\BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\target\generated-sources\r\net\kibotu\android\deviceinfo\Manifest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\target\generated-sources\r\net\kibotu\android\deviceinfo\R.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="D:\programming\net.kibotu.android.error.tracking\deviceinfo-tests\target\surefire-reports\TEST-emulator-5554_test_unknown_sdk.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="error-tracking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -156,7 +141,7 @@
       <file leaf-file-name="ErrorTracking.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/error-tracking-lib/src/net/kibotu/android/error/tracking/ErrorTracking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07505519" vertical-offset="0" max-vertical-offset="906">
+            <state vertical-scroll-proportion="0.11371238" vertical-offset="0" max-vertical-offset="598">
               <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
@@ -406,7 +391,7 @@
       <recent name="net.kibotu.android.error.tracking" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Tests.All Tests">
+  <component name="RunManager" selected="Android Application.App">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -721,12 +706,12 @@
       <workItem from="1406011784963" duration="1070000" />
       <workItem from="1406012877063" duration="60000" />
       <workItem from="1406012939107" duration="195000" />
-      <workItem from="1406013153751" duration="702000" />
+      <workItem from="1406013153751" duration="835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3519000" />
+    <option name="totallyTimeSpent" value="3652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
@@ -748,7 +733,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32513368" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1177,7 +1162,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/error-tracking-lib/src/net/kibotu/android/error/tracking/ErrorTracking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07505519" vertical-offset="0" max-vertical-offset="906">
+        <state vertical-scroll-proportion="0.11371238" vertical-offset="0" max-vertical-offset="598">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
