@@ -68,13 +68,13 @@
                 <configuration>
                     <message>Maven artifacts for ${project.version}</message>               <!-- git commit message -->
                     <noJekyll>true</noJekyll>                                               <!-- disable webpage processing -->
-                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>                 <!-- matches distribution management repository url above -->
+                    <!--<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>                 &lt;!&ndash; matches distribution management repository url above &ndash;&gt;-->
+                    <outputDirectory>D:/programming/net.kibotu.android.error.tracking/mvn-repo</outputDirectory>
                     <branch>refs/heads/mvn-repo</branch>                                    <!-- remote branch name -->
                     <includes><include>**/*</include></includes>                            <!-- include everything -->
                     <repositoryName>net.kibotu.android.error.tracking</repositoryName>      <!-- github repo name -->
                     <repositoryOwner>kibotu</repositoryOwner>                               <!-- github username  -->
                 </configuration>
-
                 <executions>
                     <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
                     <execution>
@@ -87,5 +87,11 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <github.global.server>net.kibotu.android.error.tracking</github.global.server>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
 
 </project>
