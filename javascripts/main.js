@@ -144,7 +144,7 @@ $(document).ready(function () {
         var Throwable = Parse.Object.extend("Throwable");
         var query = new Parse.Query(Throwable);
 
-        query.greaterThanOrEqualTo("createdAt", timespan);
+        // query.greaterThanOrEqualTo("createdAt", timespan); uncomment for showing errors of the last 2 days only
         query.descending("createdAt");
 
         query.find({
