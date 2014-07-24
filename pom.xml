@@ -9,13 +9,11 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-
     <modules>
         <module>error-tracking-lib</module>
         <module>error-tracking-app</module>
         <module>error-tracking-tests</module>
     </modules>
-
 
     <dependencyManagement>
         <dependencies>
@@ -108,7 +106,7 @@
                     <!--<altDeploymentRepository>internal.repo::default::file://${user.dir}/mvn-‌​repo</altDeploymentRepository>-->
                     <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
                     <!--<outputDirectory>${user.dir}/mvn-repo</outputDirectory>-->
-                    <skip>true</skip>
+                    <!--<skip>true</skip>-->
                 </configuration>
             </plugin>
 
