@@ -69,7 +69,7 @@
                     <message>Maven artifacts for ${project.version}</message>               <!-- git commit message -->
                     <noJekyll>true</noJekyll>                                               <!-- disable webpage processing -->
                     <!--<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>                 &lt;!&ndash; matches distribution management repository url above &ndash;&gt;-->
-                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+                    <outputDirectory>${user.dir}/mvn-repo</outputDirectory>
                     <branch>refs/heads/mvn-repo</branch>                                    <!-- remote branch name -->
                     <includes><include>**/*</include></includes>                            <!-- include everything -->
                     <repositoryName>net.kibotu.android.error.tracking</repositoryName>      <!-- github repo name -->
