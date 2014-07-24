@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>net.kibotu.android.error.tracking</groupId>
-  <artifactId>error-tracking</artifactId>
+  <artifactId>error-tracking-app</artifactId>
   <versioning>
+    <release>1.0.0</release>
     <versions>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
     </versions>
-    <lastUpdated>20140724192433</lastUpdated>
+    <lastUpdated>20140724192348</lastUpdated>
   </versioning>
 </metadata>
