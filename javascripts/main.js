@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    Parse.initialize("nl23nZNhm93KdkOZJJGTu8C3wJktzCHVc4KOqoBN", "6a2UZ6pXlE5K81e9Zh6CcrYyPy6QP8A8b2f8XSbL");
+    Parse.initialize("cHJlnWVZwIOgfXcdrfdPNSFVK47LmVvMpkrRUL8Q", "E78g2slqv0gfLfzKBhE0ftX08SZ9qM58MAe9I5Zg");
 
     String.prototype.escape = function () {
         var tagsToReplace = {
